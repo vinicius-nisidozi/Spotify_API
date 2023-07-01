@@ -4,14 +4,6 @@ import base64
 from requests import post, get
 import json
 
-# # Get the env data
-# def setup_env():
-#     load_dotenv()
-#     client_id = os.getenv("CLIENT_ID")
-#     client_secret = os.getenv("CLIENT_SECRET")
-#     credentials = [client_id, client_secret]
-#     return credentials
-
 # Returns a token to give the access to the API
 def get_token():
     load_dotenv()
@@ -51,22 +43,10 @@ def serch_for_artists(token, artist_name):
     
     return json_result
 
+# Returns top tracks by artist
 def get_songs_by_artist(token, artist_id):
     url=f"https://api.spotify.com/v1/artists/{artist_id}/top-tracks?country=US"
     headers = get_auth_header(token)
     result = get(url, headers=headers)
     json_result = json.loads(result.content)["tracks"]
     return json_result
-
-
-# token = get_token()
-
-# # Collect artist data
-# artist_name = ""
-# result = serch_for_artists(token, artist_name)
-# artist_id = result[0]["id"]
-
-# # Returns the artist top tracks
-# songs = get_songs_by_artist(token, artist_id)
-# for item, song in enumerate(songs):
-#     print(f"{item+1}. {song['name']}")
