@@ -17,3 +17,5 @@ Key Concepts:
 1. API Rest
 2. API Authorization
 3. Data request
+
+Please check the Demo in ```top_tracks.ipynb``` file.
