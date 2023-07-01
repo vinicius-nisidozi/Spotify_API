@@ -26,4 +26,4 @@ to built a pipeline to collect artists data that can be used for trending analys
 3. Data request
 
 **Demo**:
-Please check the Demo in ```top_tracks.ipynb``` file.
+Please check the Demo in [```top_tracks.ipynb```](https://github.com/vinicius-nisidozi/spotify-api/blob/main/top_tracks.ipynb) file.
