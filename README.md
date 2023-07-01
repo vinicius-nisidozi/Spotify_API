@@ -1,11 +1,11 @@
 # Spotify API
 
 **Key Concepts**:
-1. API Rest
+1. API REST
 2. API Authorization
 3. Data request
 
-This is a Data Engineering project developed to exercise API requests and build data pipelines.
+This is a API REST project developed to exercise requests and build data pipelines.
 
 In this project I used the [Spotify API](https://developer.spotify.com/documentation/web-api)
 to built a pipeline to collect artists data that can be used for trending analysis.
